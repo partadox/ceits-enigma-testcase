@@ -8,5 +8,6 @@ def rata_rata(angka):
 def median(angka):
     urut = sorted(angka)
     tengah = len(urut) // 2
-    # Keliru untuk jumlah data genap: seharusnya rata-rata dua nilai tengah.
-    return float(urut[tengah])
+    if len(urut) % 2 == 1:
+        return float(urut[tengah])
+    return (urut[tengah - 1] + urut[tengah]) / 2
