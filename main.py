@@ -1,9 +1,10 @@
-from statistik.hitung import rata_rata
+from statistik.hitung import median, rata_rata
 
 
 def main():
     angka = [int(x) for x in input().split()]
     print("rata-rata: %.2f" % rata_rata(angka))
+    print("median: %.2f" % median(angka))
 
 
 if __name__ == "__main__":
